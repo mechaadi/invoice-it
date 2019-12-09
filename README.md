@@ -13,7 +13,7 @@ If you want some examples, check tests.
 
 ## Install
 ```
-$ npm install @rimiti/invoice-it --save
+$ npm install titanium-invoicing --save
 ```
 
 ## Features
@@ -34,12 +34,12 @@ $ npm install @rimiti/invoice-it --save
 
 **From import**
 ```javascript
-import invoiceIt from '@rimiti/invoice-it';
+import invoiceIt from 'titanium-invoicing';
 ```
 
 **From require**
 ```javascript
-const invoiceIt = require('@rimiti/invoice-it').default;
+const invoiceIt = require('titanium-invoicing').default;
 ```
 
 **If you want to export your invoice in PDF, you must install the *html-pdf (v2.2.0)* peer dependence**
@@ -52,7 +52,7 @@ $ npm i -S html-pdf@2.2.0
 To generate an order:
 
 ```js
-import invoiceIt from '@rimiti/invoice-it';
+import invoiceIt from 'titanium-invoicing';
 
   const recipient = {
     company_name: 'Receiver company',
@@ -140,7 +140,7 @@ order.getOrder().toPDF().toFile('./order.pdf')
 To generate an invoice:
 
 ```js
-import invoiceIt from '@rimiti/invoice-it';
+import invoiceIt from 'titanium-invoicing';
 
   const recipient = {
     company_name: 'Receiver company',
@@ -239,7 +239,7 @@ All below globals attributes are totally customizable from the `.configure()` me
 
 **From .configure()**
 
-The configure method can override all default attributes presents [in this file](https://github.com/rimiti/invoice-it/blob/master/src/index.js).
+The configure method can override all default attributes presents [in this file](https://github.com/mechaadi/invoice-it/blob/master/src/index.js).
 
 Customization example:
 
@@ -295,7 +295,7 @@ order.getInvoice().toPDF().toFile();
 **From setters**
 
 ```js
-import invoiceIt from '@rimiti/invoice-it';
+import invoiceIt from 'titanium-invoicing';
 
 const recipient = {
   company_name: 'Receiver company',
@@ -337,7 +337,7 @@ order.getInvoice().toPDF().toFile();
 To add more language:
 
 ```js
-import invoiceIt from '@rimiti/invoice-it';
+import invoiceIt from 'titanium-invoicing';
 
 invoiceIt.configure({
   language: {
